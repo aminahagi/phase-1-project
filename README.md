@@ -4,8 +4,6 @@ This is a simple application that allows a user to
 ## Description
 
 
-
-
 ## Built With
 This application was built with:
 
