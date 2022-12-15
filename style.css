@@ -55,12 +55,14 @@ header i{
   margin-bottom: 15px;
 }
 .input-part .info-txt.error{
+    display: block;
   color: #721c24;
   display: block;
   background: #f8d7da;
   border: 1px solid #f5c6cb;
 }
 .input-part .info-txt.pending{
+    display: block;
   color: #0c5460;
   display: block;
   background: #d1ecf1;
@@ -108,3 +110,5 @@ header i{
   background: #43AFFC;
   transition: 0.3s ease;
 }
+
+.wrapper .
