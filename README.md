@@ -22,7 +22,6 @@ Tget started, do the foolowing:
 
         npm install
 
-
 ## Author
 Amina Hagi
 
