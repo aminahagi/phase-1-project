@@ -3,6 +3,7 @@ inputPart = wrapper.querySelector(".input-part"),
 infoTxt = inputPart.querySelector(".info-txt"),
 inputField = inputPart.querySelector("input"),
 locationBtn = inputPart.querySelector("button");
+wIcon = document.querySelector(".weather-part img");
 
 let api;
 
@@ -54,11 +55,25 @@ function weatherDetails(info){
         const {description, id} = info.weather[0];
         const {feels_like, humidity, temp} = info.main;
 
+        if (id == 800) {
+            wIcon.src = "icons/clear.svg";
+        }else if (id >= 200 && id <= 232) {
+            wIcon.src = "icons/storm.svg";
+        }else if (id >= 600 && id <= 622) {
+            wIcon.src = "icons/snow.svg";
+        }else if (id >= 701 && id <= 781) {
+            wIcon.src = "icons/haze.svg";
+        }else if (id >= 801 && id <= 804) {
+            wIcon.src = "icons/cloud.svg";
+        }else if ((id >= 300 && id <= 321) || (id >= 500 && id <= 531)){
+            wIcon.src = "icons/rain.svg";
+        }
+
         // let's pass these values to a particular html element
-        wrapper.querySelector(".temp .numb").innerHTML = temp;
+        wrapper.querySelector(".temp .numb").innerHTML = Math.floor(temp);
         wrapper.querySelector(".weather").innerHTML = description;
         wrapper.querySelector(".location span").innerHTML = `${city}, ${country}`;
-        wrapper.querySelector(".temp .numb-2").innerHTML = feels_like;
+        wrapper.querySelector(".temp .numb-2").innerHTML = Math.floor(feels_like);
         wrapper.querySelector(".humidity span").innerHTML = `${humidity}%` ;
 
         infoTxt.classList.remove("pending", "error");
