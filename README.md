@@ -1,5 +1,5 @@
 # WEATHER APP
-This is a simple application that allows a user to 
+This is a simple application that allows a user to enter a city name and will give back the weather forecast.
 
 ## Description
 
@@ -12,7 +12,7 @@ This application was built with:
 - JavaScript
 
 ## Getting Started
-Tget started, do the foolowing:
+To get started, do the following:
 
 - Clone from here
 
