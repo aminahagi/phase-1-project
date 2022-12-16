@@ -3,7 +3,8 @@ inputPart = wrapper.querySelector(".input-part"),
 infoTxt = inputPart.querySelector(".info-txt"),
 inputField = inputPart.querySelector("input"),
 locationBtn = inputPart.querySelector("button");
-wIcon = document.querySelector(".weather-part img");
+wIcon = wrapper.querySelector(".weather-part img"),
+arrowBack = wrapper.querySelector("header i");
 
 let api;
 
@@ -80,4 +81,8 @@ function weatherDetails(info){
         wrapper.classList.add("active");
         console.log(info);
     }
-}    
+}
+
+arrowBack.addEventListener("click", () => {
+    wrapper.classList.remove("active");
+});
