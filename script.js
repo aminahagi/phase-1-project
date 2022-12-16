@@ -25,7 +25,7 @@ locationBtn.addEventListener("click", () => {
 
 function onSuccess(position) {
     const {latitude, longitude} = position.coords;
-    api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`;
+    api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=6966ae45e01795bd2245f37306a99261`;
     fetchData();
 }
 
@@ -35,7 +35,7 @@ function onError(error) {
 }
 
 function requestApi(city) {
-    api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+    api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=6966ae45e01795bd2245f37306a99261`;
     fetchData();
 }
 

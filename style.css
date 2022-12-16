@@ -27,7 +27,7 @@ body{
   border-bottom: 1px solid #ccc;
 }
 header i{
-  font-size: 30px;
+  font-size: 0px;
   cursor: pointer;
   margin-right: 8px;
 }
