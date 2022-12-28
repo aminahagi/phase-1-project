@@ -10,11 +10,11 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #43AFFC;
+  background: #648caa;
 }
 ::selection{
   color: #fff;
-  background: #43AFFC;
+  background: #044675;
 }
 .wrapper{
   width: 400px;
@@ -26,7 +26,7 @@ body{
   display: flex;
   font-size: 21px;
   font-weight: 500;
-  color: #43AFFC;
+  color: #075c98;
   padding: 16px 15px;
   align-items: center;
   border-bottom: 1px solid #ccc;
@@ -80,7 +80,7 @@ header i{
   border: 1px solid #ccc;
 }
 .input-part input:is(:focus, :valid){
-  border: 2px solid #43AFFC;
+  border: 2px solid #405b6e;
 }
 .input-part input::placeholder{
   color: #bfbfbf;
@@ -105,11 +105,11 @@ header i{
 .input-part button{
   color: #fff;
   cursor: pointer;
-  background: #43AFFC;
+  background: #044d81;
   transition: 0.3s ease;
 }
 .input-part button:hover{
-  background: #1d9ffc;
+  background: #346a91;
 }
 .wrapper .weather-part{
   display: none;
@@ -168,7 +168,7 @@ header i{
   justify-content: center;
 }
 .column i{
-  color: #5DBBFF;
+  color: #0b73bd;
   font-size: 40px;
 }
 .column.humidity{
